@@ -61,25 +61,30 @@ function SearchResult(props) {
 
   useEffect(() => {
     (async () => {
-      const response = await axios(`https://api.github.com/search/${type}?q=${value.toLowerCase()}`);
-      const data = type.includes('users')
-        ? response.data.items
-        : response.data.items.map(el => {
-            return {
-                reposName: el.name,
-                login: el.owner.login,
-                id: el.owner.id,
-                avatar_url: el.owner.avatar_url,
-            }
-        });
-    //   console.log(data);
-      setData(data);
-      setLoading(false);
+      try {
+        const response = await axios.get(`search/${type}?q=${value.toLowerCase()}`);
+        const data = type.includes('users')
+            ? response.data.items
+            : response.data.items.map(el => {
+                return {
+                    reposName: el.name,
+                    login: el.owner.login,
+                    id: el.owner.id,
+                    avatar_url: el.owner.avatar_url,
+                }
+            });
+        setData(data);
+        setLoading(false);
+      } catch (error) {
+          console.log(error);
+          
+      }
     })();
   });
 
   return (
     <div className="App">
+        <p className="info_text"> You search by {type} </p>
         {loading
             ? <Loader />
             : <Table columns={columns} data={data} hiddenColumns={type.includes('user') ? 'reposName' : ''} />

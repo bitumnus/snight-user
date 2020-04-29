@@ -1,0 +1,53 @@
+.profile {
+    display: flex;
+    margin: 3rem;
+    color: inherit;
+}
+
+.wrap-avatar {
+    margin-right: 3rem;
+    border-radius: 8px;
+}
+
+.info {
+    padding: 20px;
+    /* margin-bottom: 20px; */
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #095ec7;
+    box-shadow: none;
+}
+ul {
+    list-style: none;
+    display: inline-grid;
+    padding: 0 2rem 0 0;
+}
+ul:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    cursor: alias;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #095ec7;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

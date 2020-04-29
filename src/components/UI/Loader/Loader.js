@@ -3,8 +3,10 @@ import './Loader.css'
 
 const Loader = props => {
     return (
-        <div class="lds-ripple">
-            <div /><div />
+        <div className="center">
+            <div className="lds-ripple">
+                <div /><div />
+            </div>
         </div>
     )
 }
