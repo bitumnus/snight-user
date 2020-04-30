@@ -3,6 +3,7 @@ table {
     border-spacing: 0;
     border: 1px solid #ededed;
     width: -webkit-fill-available;
+    width: -moz-available;;
   }
   
   table tr:last-child td {
