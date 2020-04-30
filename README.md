@@ -22,6 +22,25 @@ Feel free to open issues for questions/improvements!
 * Redux saga
 * SUIT CSS
 * Webpack
+
+## What is this?
+
+A personal project built with React, Redux and other tools to search users and
+view their profiles on Github. Nothing serious.
+
+Feel free to open issues for questions/improvements!
+
+### Libraries and tools
+
+* Aphrodite
+* Babel
+* Jest
+* React
+* React Router
+* Redux
+* Redux saga
+* SUIT CSS
+* Webpack
 * lodash-fp
 * normalizr
 
