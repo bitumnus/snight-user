@@ -27,6 +27,13 @@ ul:first-child {
     font-weight: bold;
 }
 
+.followers {
+    padding-inline-start: 3rem;
+    font-size: 20px;
+    height: -webkit-fill-available;
+    /* position: absolute; */
+    text-align: inherit;
+}
 .tooltip {
     position: relative;
     display: inline-block;

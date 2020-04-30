@@ -129,7 +129,7 @@ function Profile(props) {
               </ul>
             </div>
             <br />
-            {showFollowers && <ul style={{'padding-inline-start': '3rem'}}>{renderFollowersList()}</ul>}
+            {showFollowers && <ul className="followers">{renderFollowersList()}</ul>}
           </div>
         }
       </div>
