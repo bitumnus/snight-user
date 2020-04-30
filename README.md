@@ -1,8 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Search and view users via the Github API - https://bitumnus.github.io/snight-user/
 
-In the project directory, you can run:
+Requests are cached in session storage to limit the use of the API.
+
+## What is this?
+
+A personal project built with React, Redux and other tools to search users and
+view their profiles on Github. Nothing serious.
+
+Feel free to open issues for questions/improvements!
+
+### Libraries and tools
+
+* Aphrodite
+* Babel
+* Jest
+* React
+* React Router
+* Redux
+* Redux saga
+* SUIT CSS
+* Webpack
 
 ### `npm start`
 
