@@ -8,10 +8,10 @@ import Profile from './components/Profile/Profile';
 function App() {
   return (
     <div>
+      <SearchContainer />
       <Switch>
-        <Route path="/" exact component={SearchContainer} />
-        <Route path="/search" component={SearchResult} />
-        <Route path="/user/:user" component={Profile} />
+        <Route path="/search" exact component={SearchResult} />
+        <Route path="/user/:user" exact component={Profile} />
         <Redirect to="/" />
         {/* <Route render={() => <h1 style={{color: 'red'}}>404 Not Found</h1>} /> */}
       </Switch>

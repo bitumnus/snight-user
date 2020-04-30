@@ -1,3 +1,11 @@
+.result_block {
+   padding: 20px;
+}
+.result_block input {
+    margin: 0 1.5rem;
+}
+
 .info_text {
     font-size: large;
+    text-align: center;
 }

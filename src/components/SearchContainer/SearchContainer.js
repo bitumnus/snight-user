@@ -24,8 +24,8 @@ const SearchContainer = () => {
                 }}>
                     <button className="primary" disabled={!searchValue} >Get Info</button>
                 </NavLink>
-                
             </form>
+            <hr />
         </div>
     )
 }

@@ -2,6 +2,7 @@ import React, { useMemo, useState, useEffect } from "react";
 import axios from "../axios/api";
 import qs from 'querystring';
 import {NavLink} from 'react-router-dom';
+import './index.css'
 
 import Table from "../UI/Table/Table";
 import Loader from "../UI/Loader/Loader";
@@ -57,12 +58,14 @@ function SearchResult(props) {
   const [data, setData] = useState([]);
   const [type, setType] = useState(searchType);
   const [value, setValue] = useState(searcValue);
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
+  const [noResponse, setNoResponse] = useState(false);
 
   useEffect(() => {
     (async () => {
       try {
         const response = await axios.get(`search/${type}?q=${value.toLowerCase()}`);
+        if (response.data.lenght === 0) return setNoResponse(true);
         const data = type.includes('users')
             ? response.data.items
             : response.data.items.map(el => {
@@ -77,18 +80,23 @@ function SearchResult(props) {
         setLoading(false);
       } catch (error) {
           console.log(error);
-          
+          // setNoResponse(true);
       }
     })();
   });
 
   return (
     <div className="App">
-        <p className="info_text"> You search by {type} </p>
-        {loading
-            ? <Loader />
-            : <Table columns={columns} data={data} hiddenColumns={type.includes('user') ? 'reposName' : ''} />
-        }
+      { noResponse
+        ? <h1 style={{textAlign: "center"}}>No results</h1>
+        : <div className="result_block">
+          <p className="info_text"> You search by {type} </p>
+          {loading
+              ? <Loader />
+              : <Table columns={columns} data={data} hiddenColumns={type.includes('user') ? 'reposName' : ''} />
+          }
+        </div>
+      }
     </div>
   );
 }
