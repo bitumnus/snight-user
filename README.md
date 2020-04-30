@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Github User Search [![Build Status](https://travis-ci.org/simonsmith/github-user-search.svg?branch=master)](https://travis-ci.org/simonsmith/github-user-search)
 
-## Available Scripts
+Search and view users via the Github API - https://bitumnus.github.io/snight-user/
 
-In the project directory, you can run:
+Requests are cached in session storage to limit the use of the API.
 
-### `npm start`
+## What is this?
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A personal project built with React, Redux and other tools to search users and
+view their profiles on Github. Nothing serious.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Feel free to open issues for questions/improvements!
 
-### `npm test`
+### Libraries and tools
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Aphrodite
+* Babel
+* Jest
+* React
+* React Router
+* Redux
+* Redux saga
+* SUIT CSS
+* Webpack
+* lodash-fp
+* normalizr
 
-### `npm run build`
+## Running locally
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository
+1. Install dependences `yarn`
+1. Run the server `yarnpkg run start`
+1. Visit `http://localhost:3000` (note the trailing slash)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### API limit
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The Github API has a fairly strict limit (hence the indicator of your remaining
+requests in the footer). When running the app locally you can export a [personal
+access token](https://github.com/blog/1509-personal-api-tokens) and this will be
+sent along in any API calls to increase the limit:
 
-### `npm run eject`
+```
+export USER_SEARCH_OAUTH=<your token>
+yarnpkg run start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## TODO
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* Service worker
+* webpack chunks based on route
