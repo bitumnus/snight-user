@@ -35,5 +35,8 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "https://bitumnus.github.io/snight-user/",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
   "author": "Bitumnus"
 }
