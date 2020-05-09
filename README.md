@@ -1,5 +1,3 @@
-# Github User Search [![Build Status](https://travis-ci.org/simonsmith/github-user-search.svg?branch=master)](https://travis-ci.org/simonsmith/github-user-search)
-
 Search and view users via the Github API - https://bitumnus.github.io/snight-user/
 
 Requests are cached in session storage to limit the use of the API.
@@ -23,32 +21,11 @@ Feel free to open issues for questions/improvements!
 * SUIT CSS
 * Webpack
 
-## What is this?
-
-A personal project built with React, Redux and other tools to search users and
-view their profiles on Github. Nothing serious.
-
-Feel free to open issues for questions/improvements!
-
-### Libraries and tools
-
-* Aphrodite
-* Babel
-* Jest
-* React
-* React Router
-* Redux
-* Redux saga
-* SUIT CSS
-* Webpack
-* lodash-fp
-* normalizr
-
 ## Running locally
 
 1. Clone the repository
-1. Install dependences `yarn`
-1. Run the server `yarnpkg run start`
+1. Install dependences `npm`
+1. Run the server `npm run start`
 1. Visit `http://localhost:3000` (note the trailing slash)
 
 ### API limit
