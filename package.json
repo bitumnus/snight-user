@@ -1,6 +1,6 @@
 {
-  "name": "soldout-night-user",
-  "version": "0.2.1",
+  "name": "github-user-search",
+  "version": "0.3.2",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
