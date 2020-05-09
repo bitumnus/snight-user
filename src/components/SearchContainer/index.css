@@ -1,6 +1,5 @@
 .container {
     padding: 20px;
-    color: #fff;
     border: 2px solid #fff;
     border-radius: 5px;
     margin: 0 10px;
@@ -10,6 +9,7 @@
 .card {
     display: flex;
     justify-content: space-between;
+    font-size: initial;
 }
 
 button {

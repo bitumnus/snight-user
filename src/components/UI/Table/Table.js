@@ -61,9 +61,10 @@ export default function Table({ columns, data, hiddenColumns }) {
         value={filterRepos}
         onChange={handleFilterChangeRepos}
         placeholder={"Search repos"}
-        style={{display: hiddenColumns ? 'none' : 'block'}}
+        style={{display: hiddenColumns ? 'none' : ''}}
       />
       <p>Tip! Click on Header to sort column</p>
+      <br />
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map(headerGroup => (

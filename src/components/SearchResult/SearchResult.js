@@ -51,17 +51,19 @@ function SearchResult(props) {
     []
   );
 
-  const parsedSearch = qs.parse(props.location.search);
-    const searchType = parsedSearch['?type'];
-    const searcValue = parsedSearch.value;
-    
   const [data, setData] = useState([]);
-  const [type, setType] = useState(searchType);
-  const [value, setValue] = useState(searcValue);
+  const [type, setType] = useState('');
+  // const [value, setValue] = useState('');
   const [loading, setLoading] = useState(true);
   const [noResponse, setNoResponse] = useState(false);
 
   useEffect(() => {
+    const parsedSearch = qs.parse(props.location.search);
+    const type = parsedSearch['?type'];
+    const value = parsedSearch.value;
+    setType(type);
+    // setValue(searchValue);
+
     (async () => {
       try {
         const response = await axios.get(`search/${type}?q=${value.toLowerCase()}`);
@@ -80,10 +82,10 @@ function SearchResult(props) {
         setLoading(false);
       } catch (error) {
           console.log(error);
-          // setNoResponse(true);
+          setNoResponse(true);
       }
     })();
-  });
+  }, [props]);
 
   return (
     <div className="App">

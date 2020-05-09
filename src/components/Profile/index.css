@@ -1,6 +1,5 @@
 .profile {
-    display: flex;
-    margin: 3rem;
+    margin: 1rem 3rem;
     color: inherit;
 }
 
@@ -11,11 +10,7 @@
 
 .info {
     padding: 20px;
-    /* margin-bottom: 20px; */
     font-size: 18px;
-    border-radius: 8px;
-    border: 1px solid #095ec7;
-    box-shadow: none;
 }
 ul {
     list-style: none;
@@ -27,12 +22,14 @@ ul:first-child {
     font-weight: bold;
 }
 
-.followers {
+ul.followers {
     padding-inline-start: 3rem;
-    font-size: 20px;
+    margin-top: 2em;
+    font-size: 16px;
     height: -webkit-fill-available;
     /* position: absolute; */
     text-align: inherit;
+    list-style: circle;
 }
 .tooltip {
     position: relative;

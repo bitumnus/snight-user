@@ -1,8 +1,9 @@
 .result_block {
+    font-size: large;
    padding: 20px;
 }
 .result_block input {
-    margin: 0 1.5rem;
+    margin: 1.5rem;
 }
 
 .info_text {

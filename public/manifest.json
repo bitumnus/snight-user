@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "User info",
+  "name": "Github user info",
   "icons": [
     {
       "src": "favicon.ico",

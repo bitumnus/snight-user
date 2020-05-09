@@ -12,7 +12,7 @@ const SearchContainer = () => {
             <form className="card">
                 <select name="select" onChange={event => setSearchType(event.target.value)}>
                     <option defaultValue value="users">User Name</option> 
-                    <option value="repositories">Repos Name</option>
+                    <option value="repositories">Repository Name</option>
                 </select>
                 <input
                     type="text"
