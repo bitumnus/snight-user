@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/snight-user/static/css/main.f4a663c6.chunk.css",
+    "main.js": "/snight-user/static/js/main.407fce0b.chunk.js",
+    "main.js.map": "/snight-user/static/js/main.407fce0b.chunk.js.map",
+    "runtime-main.js": "/snight-user/static/js/runtime-main.ec73c3e7.js",
+    "runtime-main.js.map": "/snight-user/static/js/runtime-main.ec73c3e7.js.map",
+    "static/css/2.35fcc229.chunk.css": "/snight-user/static/css/2.35fcc229.chunk.css",
+    "static/js/2.119b162b.chunk.js": "/snight-user/static/js/2.119b162b.chunk.js",
+    "static/js/2.119b162b.chunk.js.map": "/snight-user/static/js/2.119b162b.chunk.js.map",
+    "index.html": "/snight-user/index.html",
+    "precache-manifest.026ebd43171d206bf871b73735257453.js": "/snight-user/precache-manifest.026ebd43171d206bf871b73735257453.js",
+    "service-worker.js": "/snight-user/service-worker.js",
+    "static/css/2.35fcc229.chunk.css.map": "/snight-user/static/css/2.35fcc229.chunk.css.map",
+    "static/css/main.f4a663c6.chunk.css.map": "/snight-user/static/css/main.f4a663c6.chunk.css.map",
+    "static/js/2.119b162b.chunk.js.LICENSE.txt": "/snight-user/static/js/2.119b162b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec73c3e7.js",
+    "static/css/2.35fcc229.chunk.css",
+    "static/js/2.119b162b.chunk.js",
+    "static/css/main.f4a663c6.chunk.css",
+    "static/js/main.407fce0b.chunk.js"
+  ]
+}
